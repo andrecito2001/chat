@@ -79,7 +79,7 @@ const ChatApp = () => {
         {Array.from({ length: 2 }, (_, index) => (
         <div className='mensaje2' key={index}>
           <img 
-            src='/us1.jpeg'
+            src='/us1.png'
           />
           <div className='texto'>
             <div className='titulo'>
