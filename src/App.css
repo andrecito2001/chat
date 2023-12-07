@@ -13,15 +13,260 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
+.App-body {
+  background-color: #2155BF;
   min-height: 100vh;
   display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+}
+
+.App-men{
+  min-height: 95vh;
+  width: 25%;
+  margin-bottom: 13px;
+  margin-left: 12px;
+  background-color: white;
+  color: black;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+}
+
+.mensaje1{
+  width: 100%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+  margin-left: 5px;
+  border-left: solid #2155BF;
+  background-color: rgb(241, 235, 235);
+  border-radius: 15px 0 0 15px;
+}
+
+.mensaje1:hover{
+  cursor: pointer;
+}
+
+.mensaje1 img{
+  height: 50px;
+  border-radius: 50%;
+}
+
+.mensaje1 .texto{
+  margin-left: 10px;
+  display: flex;
   flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.mensaje2{
+  width: 97%;
+  height: 50px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 15px;
+  margin-left: 10px;
+  margin-right: 5px;
+}
+
+.mensaje2:hover{
+  cursor: pointer;
+}
+
+.mensaje2 img{
+  height: 50px;
+  border-radius: 50%;
+}
+
+.mensaje2 .texto{
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 5px;
+}
+
+.titulo{
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.subtitulo{
+  margin-top: 10;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.App-chat{
+  background-color: white;
+  min-height: 95vh;
+  width: 50%;
+  margin-bottom: 13px;
+  background-color: rgb(241, 235, 235);
+  border-top-right-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.infChat{
+  width: 100vh;
+  height: 10vh;
+  margin-top: 1vh;
+  display: flex;
+  flex-direction: row;
   align-items: center;
+}
+
+.infChat img{
+  height: 50px;
+  margin: 4px;
+}
+
+.infChat div{
+  width: 300px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.infChat h1{
+  font-size: 15px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+
+.infChat h2{
+  font-size: 11px;
+  margin-top: 0;
+  color: green;
+}
+
+.chatUs{
+  width: 100%;
+  height: 71vh;
+  overflow-y: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.chat1{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: end;
+  margin-left: 37%;
+  width: 60%;
+}
+
+.chat1 img{
+  height: 30px;
+  border-radius: 50%;
+}
+
+.chat1 div{
+  background-color: #7cdaf9;
+  padding: 6px;
+  font-size: 13px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 2%;
+  margin-right: 1%;
+}
+
+.chat2{
+  display: flex;
+  flex-direction: row;
+  align-items: end;
+  justify-content: start;
+  margin-left: 30px;
+}
+
+.chat2 img{
+  height: 30px;
+  border-radius: 50%;
+}
+
+.chat2 div{
+  background-color: white;
+  padding: 6px;
+  font-size: 13px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-top-left-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  margin-bottom: 6px;
+  margin-left: 6px;
+}
+
+.textBox{
+  width: 590px;
+  position: fixed;
+  top: 86%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 50px;
+  border-radius: 20px;
+  padding-left: 20px;
+  background-color: white;
+  margin-left: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.textBox input{
+  width: 95%;
+  height: 25%;
+  color: black;
+  padding: 2%;
+  border: none;
+  background-color: white;
+}
+
+.textBox input:focus{
+  outline: none;
+}
+
+.textBox button{
+  background-color: white;
+  width: 2%;
+  height: 6%;
+  border: none;
+  position: fixed;
+  left: 70%;
+}
+
+.textBox img{
+  height: 33px;
+}
+
+.textBox img:hover{
+  cursor: pointer;
+}
+
+.h-icon{
+  display: none;
+}
+
+.textBox button:hover .h-icon{
+  display: inline-block;
+}
+
+.textBox button:hover .d-icon{
+  display: none;
+}
+
+.App-us{
+  background-color: white;
+  min-height: 95vh;
+  width: 20%;
+  border-radius: 25px;
+  margin-bottom: 13px;
+  margin-left: 20px;
 }
 
 .App-link {

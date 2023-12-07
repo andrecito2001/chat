@@ -4,7 +4,7 @@ const http = require('http');
 const server = http.createServer();
 const io = require('socket.io')(server, {
   cors: {
-    origin: "http://localhost:3000", // Ajusta la URL de tu aplicación React
+    origin: "*", 
     methods: ["GET", "POST"]
   }
 });
@@ -14,7 +14,7 @@ io.on('connection', (socket) => {
 
   socket.on('message', (message) => {
     console.log(`Mensaje recibido: ${message}`);
-    io.emit('message', message); // Envía el mensaje a todos los clientes conectados
+    io.emit('message', message); 
   });
 
   socket.on('disconnect', () => {
@@ -22,6 +22,7 @@ io.on('connection', (socket) => {
   });
 });
 
-server.listen(8080, () => {
-  console.log('Servidor escuchando en http://localhost:8080');
+server.listen(8080, '0.0.0.0', () => {
+  console.log('Servidor escuchando en http://0.0.0.0:8080');
 });
+
