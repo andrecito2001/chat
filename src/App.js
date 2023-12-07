@@ -65,7 +65,7 @@ const ChatApp = () => {
       <div className='App-men'>
         <div className='mensaje1'>
           <img 
-            src='/us1.jpeg'
+            src='/us1.png'
           />
           <div className='texto'>
             <div className='titulo'>
